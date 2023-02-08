@@ -19,33 +19,42 @@ This tutorial outlines the implementation of on-premises Active Directory within
 
 <h2>High-Level Deployment and Configuration Steps</h2>
 
-- Step 1
-- Step 2
-- Step 3
-- Step 4
+- Setup Resources in Azure
+- Install Active Directory
+- Creade an admin and normal user account in Active Directory
+    - Joint client 1 to the domain
+- Setup remote desktop for non-admin users on Client 1
 
 <h2>Deployment and Configuration Steps</h2>
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/VLJOGNL.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
-
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Set up two virtual machines in Azure. One virtual machine will be your Domain Controller and the other will be your "client".
 </p>
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/Yv4SW1o.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Install active directory in your Domain Controller (DC-1) Virtual Machine
+</p>
+<br />
+
+<p>
+<img src="https://i.imgur.com/2tOObf4.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+Created admin in active directory "Jane_admin" was the example. Used the command to ask "whoami" to verify that teh admin was created properly.
+</p>
+<br />
+
+<p>
+<img src="https://i.imgur.com/4GNoxN2.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+Here is where I set up remote desktop for "users" in powershell ISE as an admin. I gave them all passwords as well.
 </p>
 <br />
